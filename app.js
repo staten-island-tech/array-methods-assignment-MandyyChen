@@ -30,8 +30,9 @@ female: false,
 
 
 students.forEach(element => console.log(element.firstName));
-students.forEach(element => console.log(nums[nums.length - 1]));
-
+students.forEach(element => console.log(element.lastName));
+students.forEach(element => console.log(element.nums));
+students.forEach(element => console.log(element.female));
 //arrays store items and can access items by their index starting at 0
 /*const nums = [1, 2, 3, 4, 5];
 console.log(nums[nums.length - 1]);
