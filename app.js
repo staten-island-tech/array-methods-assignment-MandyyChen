@@ -2,28 +2,28 @@ const students = [
 { 
 firstName: "Sally",
 lastName: "Peach",
-nums: [2,4,6,3],
+nums: [1,5,9,13],
 female: true,
 },
 
 {
 firstName: "Ronald",
 lastName: "Apple",
-nums: [1,10,22,8],
+nums: [2,6,10,14],
 female: false,
 },
 
 {
 firstName: "Jack",
 lastName: "Orange",
-nums: [5,7,9,11],
+nums: [3,7,11,15],
 female: true,
 },
 
 {
 firstName: "Karen",
 lastName: "Kiwi",
-nums: [13,15,16,17],
+nums: [4,8,12,16],
 female: false,
 }
 ];
@@ -31,8 +31,11 @@ female: false,
 
 students.forEach(element => console.log(element.firstName));
 students.forEach(element => console.log(element.lastName));
-students.forEach(element => console.log(element.nums));
 students.forEach(element => console.log(element.female));
+students.forEach(element => console.log(element.nums[0]));
+students.forEach(element => console.log(element.nums[1]));
+students.forEach(element => console.log(element.nums[2]));
+students.forEach(element => console.log(element.nums[3]));
 //arrays store items and can access items by their index starting at 0
 /*const nums = [1, 2, 3, 4, 5];
 console.log(nums[nums.length - 1]);
