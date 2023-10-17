@@ -2,42 +2,42 @@ const students = [
 { 
 firstName: "Sally",
 lastName: "Peach",
-fav: [1,5,9,13],
+fav: ["Rats", "Birds"],
 female: true,
 },
 
 {
 firstName: "Ronald",
 lastName: "Apple",
-fav: [2,6,10,14],
+fav: ["Hamster", "Cats"],
 female: false,
 },
 
 {
 firstName: "Jack",
 lastName: "Orange",
-fav: [3,7,11,15],
+fav: ["Snakes", "Spiders"],
 female: true,
 },
 
 {
 firstName: "Karen",
 lastName: "Kiwi",
-fav: [4,8,12,16],
+fav: ["Dogs", "Cats"],
 female: false,
 }
 ];
 
 
-students.forEach((element)=> {
-    console.log(element.firstName)
-    console.log(element.lastName)
-    console.log(element.female)
+students.forEach((student)=> {
+    console.log(student.firstName)
+    console.log(student.lastName)
+    console.log(student.female)
+    student.fav.forEach((el)=> 
+        console.log(el)
+    )
 });
 
-students.fav.forEach((fav) => {
-console.log(nums[fav])
-});
 
 //arrays store items and can access items by their index starting at 0
 /*const nums = [1, 2, 3, 4, 5];
